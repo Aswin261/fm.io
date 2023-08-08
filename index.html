@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
-    <title>Result Card</title>
+    <title>Order Summary</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <div class="container">
-        <div class="image">
-            <img src="./image-qr-code.png" alt="qr">
+    <main class="container">
+        <img src="desktop.svg" alt="background-image" class="background-image">
+        <div class="card-container">
+            <img src="./hero.svg" alt="">
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                <div class="plan">
+                    <div class="image">
+                        <img src="music.svg" alt="">
+                        <div class="align">
+                            <p style="color:#000"><b>Annual Plan</b></p>
+                            <p>$59.99/year</p>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">change</a>
+                    </div>
+                </div>
+                <button class="btn1">Proceed to Payment</button>
+                <button class="btn2">Cancel Order</button>
+            </div>
         </div>
-        <div class="desc">
-            <h3>Improve your front-end skills by building projects</h3>
-            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
-      </div>
-      <script src="./script.js"></script>
+    </main>
 </body>
 </html>
