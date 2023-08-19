@@ -137,22 +137,24 @@ form button:hover{
     }
     .container{
         width: 90%;
-        height:100vh;
+        height:98vh;
         max-width: 375px;
         margin:20px auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position:relative;
-        border-radius:0;
+        border-radius:2px;
     }
     .image{
         background:url("mobile.svg") no-repeat center center/cover;
         height:40vh;
         width:100%;
-        border-radius:10px;
+        border-radius:0px;
         position:absolute;
         top:0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .subscribe{
         width:100%;
@@ -163,9 +165,11 @@ form button:hover{
     .subscribe h1{
         width:100%;
         font-size:30px;
+        padding-top:10px;
     }
     .subscribe p{
         font-size:12px;
+        line-height: 1.5rem;
     }
     .subscribe ul{
         /* margin-left:-3px; */
