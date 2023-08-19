@@ -86,6 +86,7 @@ form button{
     padding:10px;
     border-radius:10px;
     font-weight:700;
+    border:0;
 }
 form button:hover{
     background-color:hsl(4, 100%, 67%);
@@ -123,6 +124,7 @@ form button:hover{
     border-radius:10px;
     font-weight:700;
     margin-top:10px;
+    border:0;
 }
 .success button:hover{
     background-color:hsl(4, 100%, 67%);
@@ -223,6 +225,7 @@ form button:hover{
         padding:10px;
         border-radius:10px;
         font-weight:400;
+        border:0;
     }
     form button:hover{
         background-color:hsl(4, 100%, 67%);
@@ -248,6 +251,7 @@ form button:hover{
     position:absolute;
     bottom:30px;
     left:38px;
+    border:0;
 }
 .success button:hover{
     background-color:hsl(4, 100%, 67%);
