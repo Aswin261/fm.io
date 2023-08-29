@@ -1,267 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
-    background-color:hsl(235, 18%, 26%);
+    font-family: 'Poppins', sans-serif;
+    background-color:hsl(0, 0%, 94%);
     overflow:hidden;
     height:100vh;
 }
 .container{
+    max-width:550px;
+    width: 100%;
     height:400px;
-    width:600px;
-    margin:100px auto;
-    background-color:hsl(0, 0%, 100%);
-    border-radius:20px;
+    margin:15vh auto;
+    background-color:#fff;
+    border-radius:15px;
+    border-bottom-right-radius:30%;
+    padding:30px;
+}
+.input-container{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    padding:15px;
-    font-size: 12px;
+    gap:5px;
+    align-items:baseline;
 }
-.subscribe{
-    width:60%;
-    padding:20px;
-}
-.subscribe h1{
-    width:100%;
-    font-size:42px;
-}
-.subscribe p{
-    font-size:12px;
-}
-.subscribe ul{
-    margin-left:-3px;
-    list-style-type:none;
-}
-.subscribe ul li{
-margin:10px;
-background: url('./list.svg') no-repeat left center;
-padding-left: 3em;
-line-height: 2.0;
-}
-
-.subscribe >*{
-    margin:10px;
-}
-.subscribe form >*{
-    margin:10px;
-}
-.subscribe form{
-    padding-top:20px;
-}
-.subscribe form input{
+form input{
+    width:100px;
+    height:40px;
+    border:1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
     padding:10px;
-    width:90%;
-    border-radius:10px;
-    border:1px solid hsl(231, 7%, 60%);
-}
-span{
-    color:red;
-    float:right;
-    margin-right:25px;
-    font-size:10px;
-}
-input:hover{
+    color:#000;
+    font-weight: 700;
+    font-size:20px;
     cursor:pointer;
+}
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+input::placeholder{
+    color:hsl(0, 1%, 44%);
+    font-weight: bold;
 }
 input:focus{
-    outline:0;
+    outline:none;
 }
-.active{
-    background-color:#ffa8a8;
-    color:red;
-    border:1px solid red !important;
-}
-form label{
-    font-weight:700;
-}
-form button{
-    color:#fff;
-    background-color:hsl(234, 29%, 20%) ;
-    width:90%;
-    padding:10px;
-    border-radius:10px;
-    font-weight:700;
-    border:0;
-}
-form button:hover{
-    background-color:hsl(4, 100%, 67%);
-    border:0;
-    cursor:pointer;
-    box-shadow:0 5px 10px hsl(4,100%,67%,0.5);
-}
-.image{
-    background:url("desktop.svg") no-repeat center center/cover;
-    height:100%;
-    width:40%;
-    border-radius:10px;
-}
-.success{
-    height:320px;
-    width:320px;
-    background-color: #fff;
-    margin:25vh auto;
-    border-radius:20px;
-    padding:35px;
-}
-.success h1{
-    margin-top:10px;
-}
-.success p{
-    font-size:11px;
-    line-height:1rem;
-    margin:10px auto;
-}
-.success button{
-    color:#fff;
-    background-color:hsl(234, 29%, 20%) ;
-    width:100%;
-    padding:10px;
-    border-radius:10px;
-    font-weight:700;
-    margin-top:10px;
-    border:0;
-}
-.success button:hover{
-    background-color:hsl(4, 100%, 67%);
-    border:0;
-    cursor:pointer;
-    box-shadow:0 5px 10px hsl(4,100%,67%,0.5);
-}
-@media (max-width:375px){
-    body{
-        width:100vw;
-        overflow:auto;
-    }
-    .container{
-        width: 90%;
-        height:98vh;
-        max-width: 375px;
-        margin:20px auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        border-radius:2px;
-    }
-    .image{
-        background:url("mobile.svg") no-repeat center center/cover;
-        height:40vh;
-        width:100%;
-        border-radius:0px;
-        position:absolute;
-        top:0;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .subscribe{
-        width:100%;
-        height:60vh;
-        position:absolute;
-        bottom:0;
-    }
-    .subscribe h1{
-        width:100%;
-        font-size:30px;
-        padding-top:10px;
-    }
-    .subscribe p{
-        font-size:12px;
-        line-height: 1.5rem;
-    }
-    .subscribe ul{
-        /* margin-left:-3px; */
-        list-style-type:none;
-        margin-bottom:10px;
-    }
-    .subscribe ul li{
-        margin:5px;
-        background: url('./list.svg') no-repeat left center;
-        padding-left: 3em;
-        }
-    .subscribe >*{
-        margin:5px;
-    }
-    .subscribe form >*{
-        margin:5px;
-    }
-    .subscribe form{
-        padding-top:10px;
-    }
-    .subscribe form input{
-        padding:10px;
-        width:90%;
-        border-radius:10px;
-        border:1px solid hsl(231, 7%, 60%);
-    }
-    span{
-        color:red;
-        float:right;
-        margin-right:25px;
-        font-size:10px;
-    }
-    input:hover{
-        cursor:pointer;
-    }
-    input:focus{
-        outline:0;
-    }
-    .active{
-        background-color:#ffa8a8;
-        color:red;
-        border:1px solid red !important;
-    }
-    form label{
-        font-weight:700;
-    }
-    form button{
-        color:#fff;
-        background-color:hsl(234, 29%, 20%) ;
-        width:90%;
-        padding:10px;
-        border-radius:10px;
-        font-weight:400;
-        border:0;
-    }
-    form button:hover{
-        background-color:hsl(4, 100%, 67%);
-        border:0;
-        cursor:pointer;
-    }
-    .success{
-    height:90vh;
-    width:90vw;
-    background-color: #fff;
-    margin:10% auto;
-    border-radius:0px;
-    padding:35px;
-}
-.success button{
-    color:#fff;
-    background-color:hsl(234, 29%, 20%) ;
-    width:300px;
-    padding:10px;
-    border-radius:10px;
-    font-weight:700;
-    margin-top:10px;
-    position:absolute;
-    bottom:30px;
-    left:38px;
-    border:0;
-}
-.success button:hover{
-    background-color:hsl(4, 100%, 67%);
-    border:0;
-    cursor:pointer;
-    box-shadow:0 5px 10px hsl(4,100%,67%,0.5);
-}
-.success p{
-    font-size:14px;
+label{
+    width:120px;
+    display: inline-block;
+    color:hsl(0, 1%, 44%);
+    font-size:10px;
+    letter-spacing: 2px;
     line-height:1.5rem;
-    margin:10px auto;
 }
+label.active{
+    color:red;
 }
+label.active input{
+    border:1px solid red;
+}
+form .part{
+    display:flex;
+    align-items:center;
+    margin-top:-10px;
+}
+button{
+    border:0;
+    background-color: transparent;
+}
+button:hover{
+    cursor:pointer;
+}
+.part .line{
+    width:100%;
+    height:0;
+    border:1px solid hsl(0, 0%, 86%);
+}
+.part img{
+    width:50px;
+    height:50px;
+}
+.calc p{
+    font-size:45px;
+    font-style: italic;
+    font-weight: 800;
+}
+.calc span{
+    color:#854dff;
+}
+label span{
+    color:red;
+    font-size:10px;
+    width:100%;
+    display:inline-block;
+    letter-spacing:0px;
+    font-style: italic;
+    opacity:0;
+}
+label.active span{
+    opacity:1;
+    transition:opacity 0.5s ease-in-out;
+}
+
+@media (max-width:375px){
+    .container{
+        width:90%;
+    }
+    form input{
+        width:80px;
+    }
+    form .part{
+        position:relative;
+        margin:20px auto;
+    }
+    .part img{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%)
+    }
+}
+
